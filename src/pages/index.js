@@ -1,14 +1,21 @@
 import "../style.css"
-import Main from "../components/main";
 import React from "react"
-
+const Main = React.lazy(() =>
+  import("../components/main")
+)
 
 export default () => {
-  
-  // if (typeof window !== `undefined`) return null
+
+  const isSSR = typeof window === "undefined"
+
 
   return (
-   <Main/> 
+    <>
+      {!isSSR && (
+        <React.Suspense fallback={<div>Hornbram bike loading</div>}>
+          <Main />
+        </React.Suspense>
+      )}
+    </>
   )
 }
-

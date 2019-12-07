@@ -1,7 +1,5 @@
 import * as THREE from "three"
 import React from "react"
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
-
 import { Canvas } from "react-three-fiber"
 import Model from "../components/model"
 import Controls from "../components/controls"
