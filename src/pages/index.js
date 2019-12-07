@@ -4,6 +4,7 @@ import { Canvas } from "react-three-fiber"
 import Model from "../components/model"
 import Controls from "../components/controls"
 import GLTF from "../components/gatsby.gltf"
+import GLTF_BUC from "../components/BUC.gltf"
 import uniforms from "../components/uniforms"
 import "../style.css"
 
@@ -54,9 +55,10 @@ export default () => (
         height={100}
         position={[-800, 0, 800]}
       />
-      <Model url={GLTF} />
+      <Model url={GLTF_BUC} />
       <Controls
         autoRotate
+        autoRotateSpeed={0.5}
         enablePan={false}
         enableZoom={false}
         enableDamping
