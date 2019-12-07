@@ -14,7 +14,7 @@ function Model({ url }) {
             obj.material = new THREE.MeshPhysicalMaterial({
               roughness: 0.4,
               clearCoat: 1,
-              clearCoatRoughness: 0.9,
+              clearCoatRoughness: 0.3,
               color: obj.material.color,
             })
           }
