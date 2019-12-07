@@ -24,7 +24,7 @@ function Model({ url }) {
     [url]
   )
 
-  return scene ? <primitive object={scene} /> : null
+  return scene ? <primitive object={scene} rotation={[-1.5707963267948963, 0, 0]} /> : null
 }
 
 export default Model
