@@ -6,6 +6,9 @@ exports.onCreateWebpackConfig = ({
   actions,
 }) => {
   actions.setWebpackConfig({
+    externals: {
+      canvas: 'canvas', // important: 'Q' capitalized
+    },
     module: {
       rules: [
         {
@@ -13,8 +16,10 @@ exports.onCreateWebpackConfig = ({
           use: [
             `url-loader`,
           ],
+         
         },
       ],
+
     },
   })
 }
