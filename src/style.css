@@ -16,3 +16,10 @@ main {
   height: 100vh;
   background: #272730;
 }
+.canvas-container {
+  width: 200px; 
+  height: 400px; 
+  position: absolute; 
+  top:0;
+  user-select: none;
+}
